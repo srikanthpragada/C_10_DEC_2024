@@ -5,6 +5,7 @@
 void main()
 {
   int num, i;
+  int prime = 1; // true
 
     printf("Enter a number :");
     scanf("%d",&num);
@@ -14,12 +15,12 @@ void main()
        if(num % i == 0)
        {
           printf("Not a prime number!");
+          prime = 0; // false
           break;
        }
-
     }
 
-    if(i > num/2)
+    if(prime)
          printf("Prime Number!");
 
 }
