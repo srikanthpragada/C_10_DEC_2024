@@ -1,27 +1,26 @@
 #include <stdio.h>
 #include <string.h>
 
-
-int sum(int a[10])
+int equal(int a[5],int b[5])
 {
- int i, total = 0;
+int i;
 
-    for(i = 0; i < 10 ; i ++)
+  for(i = 0; i < 5; i++)
+  {
+    if(a[i] != b[i])
     {
-        total += a[i];
+       return 0;
     }
+  }
 
-    return total;
+  return 1;
 }
-
 
 
 void main()
 {
-  int arr[10] = {1,5,4,3,2,9, 6,7,8,10};
+  int a[5] = {1,2,3,4,5};
+  int b[5] = {1,2,9,4,5};
 
-
-    printf("Total  = %d", sum(arr));
+  printf("Equal = %d",equal(a,b));
 }
-
-
