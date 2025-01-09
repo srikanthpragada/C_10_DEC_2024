@@ -12,7 +12,9 @@ struct student
 
 void main()
 {
-  struct student s1;
+  struct student s1, s2;
+  struct student students[10];
+
 
      s1.admno = 1;
      strcpy(s1.name, "Tom");
