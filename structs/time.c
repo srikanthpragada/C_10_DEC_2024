@@ -34,7 +34,6 @@ void main()
     big = max(t1, t2);
 
     //print(big);
-
     reset(&t1);
     print(t1);
 
